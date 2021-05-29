@@ -41,3 +41,17 @@
   background-color: whitesmoke;
   color: #FEE500;
 }
+
+.gohome {
+  padding: 20px 30px 20px 30px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+  color: white;
+  background-color: pink;
+}
+
+.gohome:hover, .gohome:focus {
+  background-color: whitesmoke;
+  color: pink;
+}
