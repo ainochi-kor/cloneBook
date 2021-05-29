@@ -152,7 +152,10 @@ function setResult() {
 function CopyUrlToClipboard()
 {
   let point = sessionStorage.getItem('point');
-  var clip = new Clipboard(infoList[point].url);
+  document.querySelector('.kakao').setAttribute('data-clipboard-text', infoList[point].url)
+
+  var clip = new Clipboard('.kakao');
+
   clip.on('success', function(e) {
     console.log("Success");
   });
