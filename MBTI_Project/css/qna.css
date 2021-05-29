@@ -1,0 +1,51 @@
+#qna {
+  display: none;
+}
+
+.qBox {
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+
+.answerList {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.answerList:hover, .answerList:focus {
+  background-color: pink;
+  color: whitesmoke;
+}
+
+.status {
+  height: 20px;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+95,b7deed+100 */
+  background: #b7deed; /* Old browsers */
+  background: -moz-linear-gradient(top,  #b7deed 0%, #71ceef 50%, #21b4e2 95%, #b7deed 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #b7deed 0%,#71ceef 50%,#21b4e2 95%,#b7deed 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #b7deed 0%,#71ceef 50%,#21b4e2 95%,#b7deed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+}
