@@ -152,6 +152,11 @@ function setResult() {
 function CopyUrlToClipboard()
 {
   let point = sessionStorage.getItem('point');
-  window.clipboardData.setData("Text", infoList[point].url);
-	alert("URL이 클립보드에 복사되었습니다"); 
+  var clip = new Clipboard(infoList[point].url);
+  clip.on('success', function(e) {
+    console.log("Success");
+  });
+  clipboard.on('error', function(e) {
+    console.log("Error");
+  });
 }
