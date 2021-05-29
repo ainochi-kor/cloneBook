@@ -159,7 +159,7 @@ clipboard.on('success', function(e) {
     console.info('Action:', e.action);
     console.info('Text:', e.text);
     console.info('Trigger:', e.trigger);
-    alert("클립보드:" + e.text);
+    alert("url이 복사되었습니다!");
 });
 
 clipboard.on('error', function(e) {
