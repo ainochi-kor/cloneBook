@@ -1,0 +1,25 @@
+* {
+  font-family: 'Jua', sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 30px;  
+}
+
+h2, h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.headerName {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+section {
+  margin-top: 50px;
+  margin-top: 50px;
+}
