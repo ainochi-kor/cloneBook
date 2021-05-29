@@ -154,12 +154,16 @@ function CopyUrlToClipboard()
   let point = sessionStorage.getItem('point');
   document.querySelector('.kakao').setAttribute('data-clipboard-text', infoList[point].url)
 
-  var clip = new Clipboard('.kakao');
+var clipboard = new ClipboardJS('.kakao');
+clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+    alert("클립보드:" + e.text);
+});
 
-  clip.on('success', function(e) {
-    console.log("Success");
-  });
-  clipboard.on('error', function(e) {
-    console.log("Error");
-  });
+clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+});
 }
