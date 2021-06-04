@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+
+    
+  <!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Sunflower:wght@300&display=swap" rel="stylesheet"><!-- JS -->
+ 
+  <!-- React -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+  <!-- JS -->
+  <script type="text/babel" src="./js/main.js"></script>
+  <script defer type="text/javascript" src="./js/error.js"></script>
+</head>
+<body>
+  <div id="errors"></div>
+
+  
+  <div class="container">
+    <div class="gameDesc">
+      <h1>
+        Tic Tac Toe 게임
+      </h1>
+  
+      <p>
+        종이 위에 가로줄 2줄 세로줄 2줄을 그린다. <br/>
+        이렇게 생긴 9칸 위에 O, X를 번갈아가며 그린다. <br/>
+        먼저 O나 X를 3개가 직선으로 이어지게 만들면 승리한다. <br/>
+    </p>
+   </div>
+    <section class="center-block">
+      <div id="root" class="center-block"></div>
+
+      
+    </section>
+    
+  </div>
+ 
+  
+</body>
+</html>
